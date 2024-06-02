@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import random, datetime, multiprocessing, keyboard, threading
-import fight
+from . import fight
 
 trans = Translator()
 
