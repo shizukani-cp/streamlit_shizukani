@@ -1,0 +1,31 @@
+[project]
+name = "streamlit-shizukani"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "shizukani-cp", email = "to.maimai0606@gmail.com" }
+]
+dependencies = [
+    "streamlit>=1.35.0",
+    "janome>=0.5.0",
+    "beautifulsoup4>=4.12.3",
+    "googletrans>=3.0.0",
+    "keyboard>=0.13.5",
+    "playsound==1.2.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/streamlit_shizukani"]
