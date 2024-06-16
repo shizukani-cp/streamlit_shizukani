@@ -6,6 +6,7 @@ if "history" not in tuple(st.session_state):
     st.session_state["history"] = ""
 
 with st.form("my_form", clear_on_submit=True):
+    text_place = st.empty()
     input_text = st.text_input("静カニに話したいことは？")
     submitted = st.form_submit_button("話す！")
     if submitted:
@@ -16,4 +17,4 @@ with st.form("my_form", clear_on_submit=True):
             for i in range(0, len(responce_text), 48):
                 breaked_text += f"{responce_text[i:i+48]}\n"
         st.session_state["history"] += f"静カニ: {breaked_text}\n"
-    text = st.text(st.session_state["history"])
+    text_place = text_place.text(st.session_state["history"])
