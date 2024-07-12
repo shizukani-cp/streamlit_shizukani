@@ -6,6 +6,7 @@ from janome.tokenizer import Tokenizer
 from .address import address
 from .error import error
 from .fight import fight_finish, fight_start
+from .googlesearch import googlesearch
 from .meaning import meaning
 from .time import day, now, today
 
@@ -36,6 +37,7 @@ rq_fun: list[tuple[str, Callable]] = [
     ("ケンカカイシ", fight_start),
     ("ケンカオワリ", fight_finish),
     (".+トハ", meaning),
+    ("", googlesearch),
 ]
 
 
