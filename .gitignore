@@ -1,3 +1,11 @@
-run.py
 __pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
 .mypy_cache/
+
+tmp.*
+run.py

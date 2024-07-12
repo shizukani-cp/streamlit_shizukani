@@ -2,16 +2,16 @@
 name = "streamlit-shizukani"
 version = "0.1.0"
 description = "Add your description here"
-authors = [
-    { name = "shizukani-cp", email = "to.maimai0606@gmail.com" }
-]
 dependencies = [
-    "streamlit>=1.35.0",
-    "janome>=0.5.0",
-    "beautifulsoup4>=4.12.3",
-    "googletrans>=3.0.0",
-    "keyboard>=0.13.5",
+    "gensim>=4.3.2",
+    "streamlit>=1.36.0",
     "playsound==1.2.2",
+    "janome>=0.5.0",
+    "requests>=2.32.3",
+    "beautifulsoup4>=4.12.3",
+    "keyboard>=0.13.5",
+    "googletrans>=3.0.0",
+    "scipy==1.10.1",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -28,4 +28,4 @@ dev-dependencies = []
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/streamlit_shizukani"]
+packages = ["src/streamlit-shizukani"]
